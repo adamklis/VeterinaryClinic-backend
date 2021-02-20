@@ -7,7 +7,7 @@ namespace VeterinaryClinic.Validators
     {
         public UserValidator()
         {
-            RuleFor(x => x.Email).NotEmpty();
+            RuleFor(x => x.Email).NotEmpty().EmailAddress();
             RuleFor(x => x.Forename).NotEmpty();
             RuleFor(x => x.Surname).NotEmpty();
         }
